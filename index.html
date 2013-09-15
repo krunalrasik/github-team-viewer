@@ -1,1 +1,72 @@
-new page
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap, from LayoutIt!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="img/favicon.png">
+</head>
+
+<body>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="hero-unit">
+				<h1>
+					Team Viewer
+				</h1>
+				<p>
+					A unique team viewer for any organization on Github
+				</p>
+			</div>
+			<form class="form-search">
+				<strong class="label">Your Organization</strong>
+				<input type="text" class="input-medium search-query" ng-model="organization"> <button type="submit" ng-click="getMembers(organization)" class="btn">Search</button>
+			</form>
+			<div class="row-fluid">
+				<div class="span4">
+					<ul class="clearfix unstyled">
+						<li ng-repeat="member in members">
+							<a href="" ng-click="getUser(member.login)"><img src="{{member.avatar_url}}" height="50px" width="50px"></a>
+               				 <p>{{member.login}}</p>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="span8">
+				<p>{{user}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="lib/angular/angular.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/services.js"></script>
+<script type="text/javascript" src="js/controllers.js"></script>
+<script type="text/javascript" src="js/filters.js"></script>
+<script type="text/javascript" src="js/directives.js"></script>
+</body>
+</html>
