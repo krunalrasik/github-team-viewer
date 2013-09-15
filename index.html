@@ -2,7 +2,7 @@
 <html lang="en" ng-app>
 <head>
   <meta charset="utf-8">
-  <title>Bootstrap, from LayoutIt!</title>
+  <title>Team Profile Viewer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -38,11 +38,12 @@
 					Team Viewer
 				</h1>
 				<p>
-					A unique team viewer for any organization on Github
+					A unique team viewer for any organization on Github. Search teams of any github organization and get to know 
+					about their team members.
 				</p>
 			</div>
 			<form class="form-search">
-        <p>Enter your Organization</p>
+        <p>Enter Organization</p>
 				<input type="text" class="input-medium search-query" ng-model="organization"> <button type="submit" ng-click="getMembers(organization)" class="btn">Find Team</button>
 			</form>
 			<div class="row-fluid team-container">
