@@ -1,0 +1,24 @@
+.user-list li {
+  float: left;
+  padding:10px;
+}
+
+.team-container {
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.team-container .span4 {
+  padding: 12px;
+}
+
+.team-container .span8 {
+  padding: 6px;
+}
+
+.user-profile {
+  height: 80px;
+  width: 80px;
+}
+
+
