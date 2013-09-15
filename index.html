@@ -46,9 +46,14 @@
 				<input type="text" class="input-medium search-query" ng-model="organization"> <button type="submit" ng-click="getMembers(organization)" class="btn">Search</button>
 			</form>
 			<div class="row-fluid">
-        <div class="span4" ng-repeat="member in members">
-					<a href="" ng-click="getUser(member.login)"><img src="{{member.avatar_url}}" height="50px" width="50px"></a>
-          <p>{{member.login}}</p>
+        <div class="span4">
+          <ul>
+
+            <li ng-repeat="member in members">
+					    <a href="" ng-click="getUser(member.login)"><img src="{{member.avatar_url}}" height="50px" width="50px"></a>
+              <p>{{member.login}}</p>
+            </li>
+          </ul>
 				</div>
 				<div class="span8">
 				<p>Howdy!</p>
