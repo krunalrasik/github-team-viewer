@@ -47,20 +47,14 @@
 			</form>
 			<div class="row-fluid">
 				<div class="span4">
-					<ul class="clearfix unstyled">
-						<li ng-repeat="member in members">
-							<a href="" ng-click="getUser(member.login)"><img src="{{member.avatar_url}}" height="50px" width="50px"></a>
-               				 <p>{{member.login}}</p>
-						</li>
-						
-					</ul>
+					<a href="" ng-click="getUser(member.login)"><img src="{{member.avatar_url}}" height="50px" width="50px"></a>
+          <p>{{member.login}}</p>
 				</div>
 				<div class="span8">
 				<p>Howdy!</p>
 				<img src="{{user.avatar_url}}"/>
-				<p> {{user.name}} work at {{user.company}}. He sometime blog at {{user.blog}}. He was {{user.followers}} followers on GitHub.</p>
-				<p>This user maintains some {{user.public_repos}} public repos.</p>
-				<p>His Github profile is {{user.html_url}} and he can be emailed at {{user.email}}.
+				<p> {{user.name}} work at {{user.company}}. He sometime blog at {{user.blog}}. He was {{user.followers}} followers on GitHub.
+            He maintains some {{user.public_repos}} public repos.His Github profile is {{user.html_url}} and he can be emailed at {{user.email}}.
 				</div>
 			</div>
 		</div>
