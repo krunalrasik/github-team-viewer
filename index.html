@@ -42,8 +42,8 @@
 				</p>
 			</div>
 			<form class="form-search">
-				<strong class="label">Your Organization</strong>
-				<input type="text" class="input-medium search-query" ng-model="organization"> <button type="submit" ng-click="getMembers(organization)" class="btn">Search</button>
+        <p>Enter your Organization</p>
+				<input type="text" class="input-medium search-query" ng-model="organization"> <button type="submit" ng-click="getMembers(organization)" class="btn">Find Team</button>
 			</form>
 			<div class="row-fluid team-container">
         <div class="span8">
@@ -58,8 +58,8 @@
 				<div class="span4">
 				<p>Howdy!</p>
 				<img src="{{user.avatar_url}}"/>
-				<p> {{user.name}} work at {{user.company}}. He sometime blog at {{user.blog}}. He was {{user.followers}} followers on GitHub.
-            He maintains some {{user.public_repos}} public repos.His Github profile is {{user.html_url}} and he can be emailed at {{user.email}}.
+				<p> {{user.name}} works at {{organization}}. He/She sometimes blog at <a href="{{user.blog}}" target="_blank">{{user.blog}}</a>. He/She has {{user.followers}} followers on GitHub.
+            He/She maintains some {{user.public_repos}} public repos. His/Her Github profile is <a href="{{user.html_url}}" target="_blank">{{user.html_url}}</a> and he/she can be emailed at <a href="mailto:{{user.email}}">{{user.email}}</a>.
 				</div>
 			</div>
 		</div>
