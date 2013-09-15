@@ -9,6 +9,9 @@
 }
 
 .team-container .span4 {
-  border: 1px solid #d2d2d2;
-  border-radius: 4px;
+  padding: 12px;
+}
+
+.team-container .span8 {
+  padding: 6px;
 }
