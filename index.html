@@ -60,8 +60,12 @@
 					<p>Howdy!</p>
 					<span ng-show="user">
 						<img class="user-profile" alt="profile image" src="{{user.avatar_url}}"/>
+						<button class="btn btn-success" ng-click="getRepos(user.login)">Check repos</button>
 						<p> {{user.name}} works at {{organization}}. <span ng-show="user.blog">He/She sometimes blog at <a href="{{user.blog}}" target="_blank">{{user.blog}}</a></span>. He/She has {{user.followers}} followers on GitHub.
 	            		He/She maintains some {{user.public_repos}} public repos. His/Her Github profile is <a href="{{user.html_url}}" target="_blank">{{user.html_url}}</a> and <span ng-show="user.email"> he/she can be emailed at <a href="mailto:{{user.email}}">{{user.email}}</a></span>.
+					</span>
+					<span ng-show="repo.name" ng-repeat="repo in repos">
+						<button class="btn btn-success">{{repo.name}}</button>
 					</span>
 				</div>
 			</div>
