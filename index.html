@@ -65,9 +65,9 @@
 	            		He/She maintains some {{user.public_repos}} public repos. His/Her Github profile is <a href="{{user.html_url}}" target="_blank">{{user.html_url}}</a> and <span ng-show="user.email"> he/she can be emailed at <a href="mailto:{{user.email}}">{{user.email}}</a></span>.
 					</span>
 					<span class="repo-container">
-						<span class="ind-repo" ng-show="repo.name" ng-repeat="repo in repos">
-							<button class="btn btn-success">{{repo.name}}</button>
-						</span>
+						<ul class="ind-repo unstyled" ng-show="repo.name" ng-repeat="repo in repos">
+							<li><h3>{{repo.name}}</h3></li>>
+						</ul>
 					</span>
 				</div>
 			</div>
