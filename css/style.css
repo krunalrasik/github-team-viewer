@@ -21,4 +21,10 @@
   width: 80px;
 }
 
-
+.repo-container {
+	padding: 10px;
+	border: 1px solid #dddddd;
+	btn {
+		padding: 5px;
+	}
+}
