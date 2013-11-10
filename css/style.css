@@ -1,29 +1,35 @@
-.user-list li {
-  float: left;
-  padding:10px;
+.form-search {
+  text-align: center;
 }
+
+.form-search > input {
+  margin-bottom: 20px;
+}
+
 
 .team-container {
-  border: 1px solid #dddddd;
-  border-radius: 4px;
+  min-height: 150px;
+  border: 1px solid #eee;
+  border-right: 6px solid #eee;
 }
 
-.team-container .span4 {
-  padding: 12px;
+.team-member-info {
+  min-height: 150px;
+  border: 1px solid #eee;
 }
 
-.team-container .span8 {
-  padding: 6px;
+.app-container {
+  margin-top: 80px;
 }
 
-.user-profile {
-  height: 80px;
-  width: 80px;
+.img-avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 10px;
 }
 
-.repo-container {
-  padding: 20px;
-  btn {
-    padding: 5px;
-  }
+.img-avatar-container {
+  text-align: center;
+  padding: 10px;
 }
