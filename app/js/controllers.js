@@ -30,10 +30,9 @@ function AppCtrl($scope, $http, $log) {
     });
   }
 
-  $scope.getRepos = function(member){
-    $scope.current_member = member;
-    $log.log("Wanna get repos from " + member + ", huh?");
-    $http.jsonp("https://api.github.com/users/" + member + "/repos?callback=JSON_CALLBACK").success(function(data){
+  $scope.getRepos = function(user){
+    $log.log("Wanna get repos from " + user + ", huh?");
+    $http.jsonp("https://api.github.com/users/" + user + "/repos?callback=JSON_CALLBACK").success(function(data){
       $scope.repos = data.data;
     });
   }
