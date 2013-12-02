@@ -19,20 +19,20 @@ module.exports = function (grunt) {
     
     
     jshint: {
-      all: ['Gruntfile.js', 'app/js/*.js'],
+      all: ['app/js/*.js'],
       options: {
         jshintrc: '.jshintrc'
       }
     },
     jsbeautifier: {
       modify: {
-        src: ['Gruntfile.js', 'app/js/**/*.js'],
+        src: ['app/js/*.js'],
         options: {
           config: '.jsbeautifyrc'
         }
       },
       verify: {
-        src: ['Gruntfile.js', 'app/js/**/*.js'],
+        src: ['app/js/**/*.js'],
         options: {
           mode: 'VERIFY_ONLY',
           config: '.jsbeautifyrc'
