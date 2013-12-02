@@ -1,0 +1,20 @@
+{
+  "name": "Angular Team Profile",
+  "author": "Vinit Kumar",
+  "version": "0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinitkumar/angular-team-profile"
+  },
+  "scripts": {
+    "test": "grunt verify --verbose"
+  },
+  "dependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-jshint": "0.7.1",
+    "grunt-jsbeautifier": "0.2.2"
+  },
+  "devDependencies": {
+    "grunt-cli": "0.1.11"
+  }
+}
