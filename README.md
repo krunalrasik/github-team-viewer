@@ -1,4 +1,6 @@
-# Angular Team Profile
+#Angular Team Profile
+
+[![Build Status](https://travis-ci.org/vinitkumar/angular-team-profile.png?branch=master)](https://travis-ci.org/vinitkumar/angular-team-profile)
 
 A simple angular app to access the details of team members of a organization on Github. Uses github APIs.
 
