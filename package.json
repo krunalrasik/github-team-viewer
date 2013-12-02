@@ -1,7 +1,7 @@
 {
-  "name": "Angular Team Profile",
+  "name": "AngularTeamProfile",
   "author": "Vinit Kumar",
-  "version": "0.1",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/vinitkumar/angular-team-profile"
