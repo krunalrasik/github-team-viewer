@@ -1,5 +1,4 @@
 /* Controllers */
-
 function AppCtrl($scope, $http, $log) {
   $scope.organization = 'github';
   var reset = function () {
