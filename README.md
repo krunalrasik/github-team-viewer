@@ -9,3 +9,7 @@ A simple angular app to access the details of team members of a organization on 
 
 
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vinitkumar/angular-team-profile/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
