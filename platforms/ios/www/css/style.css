@@ -1,0 +1,72 @@
+body {
+  background: url('/img/back1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.form-search {
+  text-align: center;
+}
+
+.form-search > input {
+  margin-bottom: 20px;
+}
+
+
+.team-container {
+  min-height: 150px;
+}
+
+.team-member-info {
+  min-height: 150px;
+  position: fixed;
+  right: 0;
+}
+
+.app-container {
+  margin-top: 80px;
+}
+
+.img-avatar {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.img-avatar-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.intro-text {
+  text-align: center;
+  color: #ffffff;
+  font-weight: light;
+}
+
+.app-text {
+  font-weight: lighter; 
+}
+
+.example-profile {
+  margin-top: 25px;
+}
+
+
+a {
+  color: #55acee;
+}
+
+.projects {
+  padding: 10px;
+  color: white;
+}
+
+.profile-image-container {
+  background: url('/img/profile.png');
+  content: ""; 
+  height: 400px;
+  background-repeat: no-repeat;
+}
