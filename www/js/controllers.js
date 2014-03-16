@@ -24,6 +24,8 @@ function AppCtrl($scope, $http, $log) {
   };
 
   $scope.getUser = function (user) {
+    $scope.user = [];
+    $scope.repo = [];
     $log.log("Getting " + user + "'s data.");
     $http.jsonp("https://api.github.com/users/" + user + "?callback=JSON_CALLBACK").success(function (data) {
       $scope.user = data.data;
@@ -32,18 +34,12 @@ function AppCtrl($scope, $http, $log) {
   };
 
   $scope.getRepos = function (user) {
+    $scope.repos = [];
     $log.log("Fetching projects of " + user);
     $http.jsonp("https://api.github.com/users/" + user + "/repos?callback=JSON_CALLBACK").success(function (data) {
       $scope.repos = data.data;
     });
   };
 
-  $scope.getCommits = function (repo) {
-    $scope.current_repo = repo;
-    $log.log("Wanna get commits from " + repo + ", huh?");
-    $http.jsonp("https://api.github.com/repos/" + $scope.current_member + "/" + repo + "/commits?callback=JSON_CALLBACK").success(function (data) {
-      $scope.commits = data.data;
-    });
-  };
 }
 //MyCtrl1.$inject = [];
