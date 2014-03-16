@@ -46,6 +46,10 @@ body {
   font-weight: light;
 }
 
+.intro-text-container {
+  padding-bottom: 50px;
+}
+
 .app-text {
   font-weight: lighter; 
 }
@@ -53,7 +57,6 @@ body {
 .example-profile {
   margin-top: 25px;
 }
-
 
 a {
   color: #55acee;
