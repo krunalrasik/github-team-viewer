@@ -1,5 +1,5 @@
 body {
-  background: url('/img/back1.jpg');
+  background: url('/angular-team-profile/img/back1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -65,7 +65,7 @@ a {
 }
 
 .profile-image-container {
-  background: url('/img/profile.png');
+  background: url('/angular-team-profile/img/profile.png');
   content: ""; 
   height: 400px;
   background-repeat: no-repeat;
