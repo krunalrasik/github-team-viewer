@@ -61,13 +61,13 @@
         </span>
       </div>
       <div class="col-md-4 col-xs-6 team-member-info">
-        <h4>{{ user.name}}</h4>
+        <h4 ng-show="user.name">{{ user.name }}</h4>
         <span ng-show="user">
           <img class="img-avatar" alt="profile image" src="{{user.avatar_url}}"/>
           <button class="btn btn-success" ng-click="getRepos(user.login)">Check repos</button>
             <ul class="fa-ul">
               <li>
-                <i class="fa fa-user fa-lg fa-li"></i>works at {{organization}}.
+                <i class="fa fa-user fa-lg fa-li"></i> {{ user.login }} works at {{organization}}.
               </li>
               <li ng-show="user.location">
                 <i class="fa fa-location-arrow fa-lg fa-li"></i> lives in {{ user.location }}.
