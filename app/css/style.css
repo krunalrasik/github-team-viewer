@@ -1,9 +1,5 @@
 body {
-<<<<<<< HEAD
   background: url('../img/back1.jpg');
-=======
-  background: url('/img/back1.jpg');
->>>>>>> 1292ff119277482d41a8be745e8975c7b99f2317
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -50,13 +46,11 @@ body {
   font-weight: light;
 }
 
-<<<<<<< HEAD
+
 .intro-text-container {
   padding-bottom: 50px;
 }
 
-=======
->>>>>>> 1292ff119277482d41a8be745e8975c7b99f2317
 .app-text {
   font-weight: lighter; 
 }
@@ -65,10 +59,6 @@ body {
   margin-top: 25px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1292ff119277482d41a8be745e8975c7b99f2317
 a {
   color: #55acee;
 }
@@ -79,11 +69,7 @@ a {
 }
 
 .profile-image-container {
-<<<<<<< HEAD
   background: url('../img/profile.png');
-=======
-  background: url('/img/profile.png');
->>>>>>> 1292ff119277482d41a8be745e8975c7b99f2317
   content: ""; 
   height: 400px;
   background-repeat: no-repeat;
