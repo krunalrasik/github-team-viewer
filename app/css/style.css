@@ -1,3 +1,10 @@
+body {
+  background: url('/img/back1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
 .form-search {
   text-align: center;
 }
@@ -31,4 +38,35 @@
 .img-avatar-container {
   text-align: center;
   padding: 10px;
+}
+
+.intro-text {
+  text-align: center;
+  color: #ffffff;
+  font-weight: light;
+}
+
+.app-text {
+  font-weight: lighter; 
+}
+
+.example-profile {
+  margin-top: 25px;
+}
+
+
+a {
+  color: #55acee;
+}
+
+.projects {
+  padding: 10px;
+  color: white;
+}
+
+.profile-image-container {
+  background: url('/img/profile.png');
+  content: ""; 
+  height: 400px;
+  background-repeat: no-repeat;
 }
