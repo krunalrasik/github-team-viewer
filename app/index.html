@@ -51,7 +51,11 @@
   <div class="container app-container">
     <div class="content" ng-show="loading">
       <h1 class="intro-text" >Github Team Viewer</h1>
+<<<<<<< HEAD
       <div class="col-md-6 col-xs-12 intro-text-container">
+=======
+      <div class="col-md-6 col-xs-12">
+>>>>>>> 1292ff119277482d41a8be745e8975c7b99f2317
         <h2 class="app-text">Find Awesome developers!</h2>
         <h3 class="app-text">Enter an Organization's name in the Search box and get to know the developers working there.</h3>
       </div>
@@ -62,14 +66,22 @@
       <div class="col-md-8 col-xs-6 team-container">
         <span class="user-list">
           <span ng-repeat="member in members" class="img-avatar-container">
+<<<<<<< HEAD
             <a href="" ng-click="getUser(member.login)"><img ng-cloak src="{{member.avatar_url}}" class="img-avatar"></a
+=======
+            <a href="" ng-click="getUser(member.login)"><img ng-show="member" src="{{member.avatar_url}}" class="img-avatar"></a
+>>>>>>> 1292ff119277482d41a8be745e8975c7b99f2317
           </span>
         </span>
       </div>
       <div class="col-md-4 col-xs-6 team-member-info">
         <h4 ng-show="user.name">{{ user.name }}</h4>
         <span ng-show="user">
+<<<<<<< HEAD
           <img class="img-avatar" alt="profile image" ng-cloak src="{{user.avatar_url}}"/>
+=======
+          <img class="img-avatar" alt="profile image" ng-show="user" src="{{user.avatar_url}}"/>
+>>>>>>> 1292ff119277482d41a8be745e8975c7b99f2317
           <button class="btn btn-success" ng-click="getRepos(user.login)">Check repos</button>
             <ul class="fa-ul">
               <li>
@@ -98,6 +110,7 @@
               </li>
             </ul>
         </span>
+<<<<<<< HEAD
       </div>
     </div>
   </div>
@@ -107,6 +120,14 @@
       <div ng-repeat="repo in repos">
         <div class="col-md-6">
           <i class="fa fa-laptop fa-3x" ng-show="repo"></i> <a class="projects" href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
+=======
+        <div class="repo-container">     
+           <span class="container" ng-repeat="repo in repos">
+               <span class="col-md-6">
+                 <i class="fa fa-laptop fa-3x" ng-show="repo"></i> <a class="projects" href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
+               </span>
+          </span>
+>>>>>>> 1292ff119277482d41a8be745e8975c7b99f2317
         </div>
       </div>
     </div>
