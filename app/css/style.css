@@ -9,13 +9,12 @@
 
 .team-container {
   min-height: 150px;
-  border: 1px solid #eee;
-  border-right: 6px solid #eee;
 }
 
 .team-member-info {
   min-height: 150px;
-  border: 1px solid #eee;
+  position: fixed;
+  right: 0;
 }
 
 .app-container {
