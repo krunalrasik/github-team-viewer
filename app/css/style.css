@@ -76,6 +76,7 @@ a {
 
 /* navbar styling */
 .search-form {
+  box-shadow: none;
   margin: 0;
   padding: 15px;
 }
