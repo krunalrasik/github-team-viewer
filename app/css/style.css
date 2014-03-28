@@ -1,9 +1,8 @@
 body {
-  background: url('../img/back1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url('../img/background.jpg');
+  background-repeat: repeat;
   color: #ffffff;
-}
+} 
 
 .form-search {
   text-align: center;
@@ -73,4 +72,15 @@ a {
   content: ""; 
   height: 400px;
   background-repeat: no-repeat;
+}
+
+/* navbar styling */
+.search-form {
+  margin: 0;
+  padding: 15px;
+}
+
+.container  .navbar-header-container {
+  margin-right: 0;
+  margin-left: 0;
 }

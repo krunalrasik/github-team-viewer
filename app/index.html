@@ -30,23 +30,24 @@
 </head>
 
 <body ng-controller="AppCtrl">
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <i class="fa fa-github fa-2x"></i>
-        </a>
-        <form class="navbar-form" role="search">
-          <div class="input-group">
-            <input type="text" class="form-control" ng-model="organization" placeholder="Search Github Organizations" name="srch-term" id="srch-term">
-            <div class="input-group-btn">
-              <button class="btn btn-default" ng-click="getMembers(organization)" type="submit"><i class="fa fa-search fa-lg"></i></button>
+  <header id="header">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header col-lg-12 col-xs-12 navbar-header-container">
+          <a class="navbar-brand" href="#">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+          <form class="navbar-form search-form" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" ng-model="organization" placeholder="Search Github Organizations" name="srch-term" id="srch-term">
+              <div class="input-group-btn">
+                <button class="btn btn-default" ng-click="getMembers(organization)" type="submit"><i class="fa fa-search fa-lg"></i></button>
+              </div>
             </div>
-          </div>
-        </form>  
-      </div>
+          </form>  
+        </div>
     </div>
-  </div>
+  </header>
+  
 
   <div class="container app-container">
     <div class="content" ng-show="loading">
