@@ -1,15 +1,35 @@
-#Angular Team Profile
+#Github Team Viewer 
 
-[![Build Status](https://travis-ci.org/vinitkumar/angular-team-profile.png?branch=master)](https://travis-ci.org/vinitkumar/angular-team-profile)
+Github Team Viewer is an handy application built with Angular.js that helps
+you find developers from an organization. In order to use it just search for 
+company in the search bar and you will get a list of developers. 
 
-A simple angular app to access the details of team members of a organization on Github. Uses github APIs.
-
-- Try the web-app here: http://vinitkumar.me/angular-team-profile OR
-- Download the android apk file from here: link] (http://bit.ly/1bjWyGy)
-
-
-
+Then, click on any of the image to get detailed information such as email,
+website and location. Also, you can check their projects by click on check repos 
+button.
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/vinitkumar/angular-team-profile/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+## Installation
+
+```sh
+git clone git@github.com:vinitkumar/github-team-viewer.git
+cd github-team-viewer
+npm install
+node server.js
+```
+
+The app will be running on [http://localhost:5000](http://localhost:5000)
+
+## Background
+
+The app is built with Angular.js and Gitub API. You should take care that github 
+doesn't allow more than 60 requests per hour per IP. Since there is not 
+oauth implemented in the system as of yet. 
+
+
+
+
+
+
+
 

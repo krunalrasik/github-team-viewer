@@ -1,13 +1,14 @@
 {
-  "name": "AngularTeamProfile",
+  "name": "Github-Team-Viewer",
   "author": "Vinit Kumar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/vinitkumar/angular-team-profile"
   },
   "scripts": {
-    "test": "grunt verify --verbose"
+    "start": "node server.js",
+     "test": "grunt verify --verbose"
   },
   "dependencies": {
     "grunt": "0.4.1",
