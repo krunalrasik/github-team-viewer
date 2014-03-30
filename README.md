@@ -1,6 +1,6 @@
 #Github Team Viewer 
 
-Github Team Viewer is an handy application built with Angular.js that helps
+Github Team Viewer is a handy application built with Angular.js that helps
 you find developers from an organization. In order to use it just search for 
 company in the search bar and you will get a list of developers. 
 
