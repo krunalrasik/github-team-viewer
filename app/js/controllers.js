@@ -15,15 +15,28 @@ function AppCtrl($scope, $http, $log) {
 
   $scope.getMembers = function (organization) {
     reset();
+    $scope.company = false;
     $log.log("Getting " + organization + ", for you, hold tight!");
-    $http.jsonp("https://api.github.com/orgs/" + organization + "/members?callback=JSON_CALLBACK").success(function (data) {
-      $scope.members = data.data;
-      $scope.loading = false;
-      $scope.finding = true;
-    });
+    $http.jsonp("https://api.github.com/orgs/" + organization + "/members?callback=JSON_CALLBACK")
+        .success(function (data) {
+            $scope.members = data.data;
+            $scope.loading = false;
+            $scope.finding = true;
+            $scope.company = true;
+        })
+        .error(function (data, status) {
+            console.log(data);
+            console.log(status);
+        });
   };
 
   $scope.getUser = function (user) {
+    $scope.repos = [];
+    $scope.repos = [];
+    $scope.commits = [];
+    $scope.current_member = null;
+    $scope.current_repo = null;
+
     $scope.user = [];
     $scope.repo = [];
     $log.log("Getting " + user + "'s data.");
@@ -34,6 +47,12 @@ function AppCtrl($scope, $http, $log) {
   };
 
   $scope.getRepos = function (user) {
+    $scope.repos = [];
+    $scope.repos = [];
+    $scope.commits = [];
+    $scope.current_member = null;
+    $scope.current_repo = null;
+
     $scope.repos = [];
     $log.log("Fetching projects of " + user);
     $http.jsonp("https://api.github.com/users/" + user + "/repos?callback=JSON_CALLBACK").success(function (data) {
