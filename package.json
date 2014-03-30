@@ -12,7 +12,8 @@
   "dependencies": {
     "grunt": "0.4.1",
     "grunt-contrib-jshint": "0.7.1",
-    "grunt-jsbeautifier": "0.2.2"
+    "grunt-jsbeautifier": "0.2.2",
+    "express": "~3.5.1"
   },
   "devDependencies": {
     "grunt-cli": "0.1.11"
