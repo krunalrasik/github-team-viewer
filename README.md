@@ -15,7 +15,7 @@ button.
 git clone git@github.com:vinitkumar/github-team-viewer.git
 cd github-team-viewer
 npm install
-node server.js
+npm start
 ```
 
 The app will be running on [http://localhost:5000](http://localhost:5000)
