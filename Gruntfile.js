@@ -15,9 +15,18 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    
-    
-    
+
+
+    uncss: {
+      dist: {
+        src: ['app/index.html'],
+        dest: 'app/css/tidy.css',
+        options: {
+          report: 'min'
+        }
+      }
+    },
+
     jshint: {
       all: ['app/js/*.js'],
       options: {
@@ -40,7 +49,7 @@ module.exports = function (grunt) {
       }
     }
   });
-
+  grunt.loadNpmTasks('grunt-uncss');
   grunt.loadNpmTasks('grunt-jsbeautifier');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
