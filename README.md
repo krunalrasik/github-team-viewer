@@ -23,7 +23,7 @@ The app will be running on [http://localhost:5000](http://localhost:5000)
 ## Background
 
 The app is built with Angular.js and Gitub API. You should take care that github 
-doesn't allow more than 60 requests per hour per IP. Since there is not 
+doesn't allow more than 60 requests per hour per IP. Since there is no 
 oauth implemented in the system as of yet. 
 
 
