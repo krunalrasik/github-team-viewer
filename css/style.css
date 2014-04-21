@@ -1,9 +1,8 @@
 body {
-  background: url('/angular-team-profile/img/back1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url('../img/background.jpg');
+  background-repeat: repeat;
   color: #ffffff;
-}
+} 
 
 .form-search {
   text-align: center;
@@ -46,6 +45,7 @@ body {
   font-weight: light;
 }
 
+
 .intro-text-container {
   padding-bottom: 50px;
 }
@@ -68,8 +68,20 @@ a {
 }
 
 .profile-image-container {
-  background: url('/angular-team-profile/img/profile.png');
+  background: url('../img/profile.png');
   content: ""; 
   height: 400px;
   background-repeat: no-repeat;
+}
+
+/* navbar styling */
+.search-form {
+  box-shadow: none;
+  margin: 0;
+  padding: 15px;
+}
+
+.container  .navbar-header-container {
+  margin-right: 0;
+  margin-left: 0;
 }
