@@ -16,6 +16,7 @@ function AppCtrl($scope, $http, $log) {
   $scope.getMembers = function (organization) {
     reset();
     $scope.company = false;
+    // check if the entered value is org or not!
     $log.log("Getting " + organization + ", for you, hold tight!");
     $http.jsonp("https://api.github.com/orgs/" + organization + "/members?callback=JSON_CALLBACK")
         .success(function (data) {
